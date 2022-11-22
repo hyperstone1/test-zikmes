@@ -1,0 +1,105 @@
+@import './nullstyle.scss';
+$fa-font-path: '~font-awesome/fonts';
+@import '~font-awesome/scss/font-awesome.scss';
+
+body {
+  background-color: #959393;
+}
+.app {
+  padding-top: 180px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  form {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    background-color: rgb(217, 217, 217, 0.4);
+    transform: skew(304deg);
+    -webkit-transform: skew(304deg);
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-right: 4px solid #fff;
+    border-left: 4px solid #fff;
+    input {
+      width: 320px;
+      padding: 20px 20px 20px 0px;
+      margin-left: 54px;
+      background-color: rgb(217, 217, 217, 0.7);
+      background: transparent;
+      color: #4e4d4d;
+      border: none;
+      outline: none;
+      transform: skew(56deg);
+      -webkit-transform: skew(56deg);
+      margin-right: 2px;
+    }
+    input::placeholder {
+      font-weight: 400;
+      color: #4e4d4d;
+    }
+    .button_order {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: red;
+      width: 250px;
+      height: 64px;
+      border-left: 3px solid #fff;
+      transform: skew(0deg);
+      -webkit-transform: skew(0deg);
+      cursor: pointer;
+      button {
+        width: 60%;
+        height: 100%;
+        background-color: transparent;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 600;
+        border: none;
+        -webkit-transform: skew(55deg);
+        transform: skew(55deg);
+        cursor: pointer;
+      }
+    }
+  }
+  .error {
+    border-color: red;
+  }
+  .inputError {
+    position: absolute;
+    bottom: -30px;
+    color: red;
+  }
+}
+.alert_block {
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.3);
+  background-color: #04aa6d;
+  color: white;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  animation: showAlert 3s linear forwards;
+}
+.alert_message {
+  padding: 20px 20px;
+}
+
+@keyframes showAlert {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

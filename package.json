@@ -1,0 +1,40 @@
+{
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack",
+    "warn": "sass-migrator division **/*.scss"
+  },
+  "name": "test-zikmes",
+  "version": "1.0.0",
+  "description": "test form",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": " "
+  },
+  "keywords": [
+    "js"
+  ],
+  "author": "Nikolay",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "css-loader": "^6.7.2",
+    "file-loader": "^6.2.0",
+    "font-awesome": "^4.7.0",
+    "sass": "^1.56.1",
+    "sass-loader": "^13.2.0",
+    "sass-migrator": "^1.7.1",
+    "style-loader": "^3.3.1",
+    "url-loader": "^4.1.1"
+  }
+}

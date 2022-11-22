@@ -1,0 +1,46 @@
+@media (max-width: 768px) {
+  .app {
+    form {
+      width: 80%;
+      transform: skew(0deg);
+      -webkit-transform: skew(0deg);
+      border: 2px solid #fff;
+      input {
+        padding-left: 15px;
+        margin-left: 15px;
+        width: 60%;
+        transform: skew(0deg);
+        -webkit-transform: skew(0deg);
+        border-right: 2px solid #fff;
+      }
+      .button_order {
+        width: 40%;
+        border: none;
+        outline: none;
+        margin: 0;
+        padding: 0;
+        button {
+          transform: skew(0deg);
+          -webkit-transform: skew(0deg);
+          width: 100%;
+        }
+        &::before {
+          position: absolute;
+          left: -1px;
+          top: -1px;
+          content: '';
+          width: 2px;
+          height: 66px;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 420px) {
+  .app {
+    form {
+      width: 100%;
+    }
+  }
+}
